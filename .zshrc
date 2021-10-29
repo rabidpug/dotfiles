@@ -6,7 +6,7 @@ if [ ! -d "$newfpath" ]; then
 fi
 
 fpath=($newfpath $fpath)
-
+name=''
 for f in $ZDOTDIR/prompt/*/; do
   name=$(basename $f)
   filepath="$f$name.zsh"
@@ -15,12 +15,12 @@ for f in $ZDOTDIR/prompt/*/; do
     if [ ! -L "$promptpath" ]; then
       ln -s "$filepath" "$promptpath"
     fi
-    autoload -U promptinit && promptinit
-    prompt "$name"
   else
     echo "$filepath does not exist!"
   fi
 done
+autoload -U promptinit && promptinit
+prompt "$name"
 
 ## SOURCE PLUGINS ##
 
