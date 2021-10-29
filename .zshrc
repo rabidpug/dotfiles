@@ -13,7 +13,7 @@ for f in $ZDOTDIR/prompt/*/; do
   filepath="$f$name.zsh"
   promptpath="$newfpath/prompt_${name}_setup"
   if [ -f "$filepath" ]; then
-    if [ ! -f "$promptpath" ]; then
+    if [ ! -e "$promptpath" ]; then
       ln -s "$filepath" "$promptpath"
     fi
     prompt "$name"
