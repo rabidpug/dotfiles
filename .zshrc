@@ -6,7 +6,6 @@ if [ ! -d "$newfpath" ]; then
 fi
 
 fpath=($newfpath $fpath)
-autoload -U promptinit && promptinit
 
 for f in $ZDOTDIR/prompt/*/; do
   name=$(basename $f)
@@ -16,6 +15,7 @@ for f in $ZDOTDIR/prompt/*/; do
     if [ ! -L "$promptpath" ]; then
       ln -s "$filepath" "$promptpath"
     fi
+    autoload -U promptinit && promptinit
     prompt "$name"
   else
     echo "$filepath does not exist!"
