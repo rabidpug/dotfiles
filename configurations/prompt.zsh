@@ -19,3 +19,4 @@ for f in $ZDOTDIR/prompt/*/; do
 done
 autoload -U promptinit && promptinit
 prompt "$name"
+unset RPROMPT
