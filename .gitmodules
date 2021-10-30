@@ -34,9 +34,6 @@ url = https://github.com/jimhester/per-directory-history
 [submodule "plugins/appup"]
 path = plugins/appup
 url = https://github.com/cloudstek/zsh-plugin-appup
-[submodule "plugins/zsh-bd"]
-path = plugins/zsh-bd
-url = https://github.com/Tarrasch/zsh-bd
 [submodule "plugins/zsh-completion-generator"]
 path = plugins/zsh-completion-generator
 url = https://github.com/RobSis/zsh-completion-generator
@@ -44,32 +41,35 @@ url = https://github.com/RobSis/zsh-completion-generator
 path = plugins/forgit
 url = https://github.com/wfxr/forgit
 [submodule "plugins/alias-tips"]
-	path = plugins/alias-tips
-	url = https://github.com/djui/alias-tips
+path = plugins/alias-tips
+url = https://github.com/djui/alias-tips
 [submodule "plugins/autopair"]
-	path = plugins/autopair
-	url = https://github.com/hlissner/zsh-autopair
+path = plugins/autopair
+url = https://github.com/hlissner/zsh-autopair
 [submodule "plugins/zsh-completions"]
-	path = plugins/zsh-completions
-	url = https://github.com/zsh-users/zsh-completions
+path = plugins/zsh-completions
+url = https://github.com/zsh-users/zsh-completions
 [submodule "plugins/zsh-interactive-cd"]
-	path = plugins/zsh-interactive-cd
-	url = https://github.com/changyuheng/zsh-interactive-cd
+path = plugins/zsh-interactive-cd
+url = https://github.com/changyuheng/zsh-interactive-cd
 [submodule "plugins/colored-man-pages"]
-	path = plugins/colored-man-pages
-	url = https://github.com/ael-code/zsh-colored-man-pages
+path = plugins/colored-man-pages
+url = https://github.com/ael-code/zsh-colored-man-pages
 [submodule "plugins/toggle-command-prefix"]
-	path = plugins/toggle-command-prefix
-	url = https://github.com/xPMo/zsh-toggle-command-prefix
+path = plugins/toggle-command-prefix
+url = https://github.com/xPMo/zsh-toggle-command-prefix
 [submodule "plugins/zsh-autosuggestions"]
-	path = plugins/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
+path = plugins/zsh-autosuggestions
+url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "plugins/auto-ls"]
-	path = plugins/auto-ls
-	url = https://github.com/desyncr/auto-ls
+path = plugins/auto-ls
+url = https://github.com/desyncr/auto-ls
 [submodule "plugins/zsh-history-substring-search"]
-	path = plugins/zsh-history-substring-search
-	url = https://github.com/zsh-users/zsh-history-substring-search
+path = plugins/zsh-history-substring-search
+url = https://github.com/zsh-users/zsh-history-substring-search
 [submodule "plugins/zsh-thefuck"]
-	path = plugins/zsh-thefuck
-	url = https://github.com/laggardkernel/zsh-thefuck
+path = plugins/zsh-thefuck
+url = https://github.com/laggardkernel/zsh-thefuck
+[submodule "plugins/bd"]
+	path = plugins/bd
+	url = https://github.com/Tarrasch/zsh-bd

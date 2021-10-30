@@ -3,6 +3,7 @@ fzf-tab
 npms
 zsh-hist
 jq
+bd
 zsh-fzf-history-search
 zsh-better-npm-completion
 ohmyzsh/plugins/git
@@ -13,6 +14,9 @@ ohmyzsh/plugins/common-aliases
 ohmyzsh/plugins/sudo
 per-directory-history
 appup
+auto-ls
+autopair
+colored-man-pages
 forgit
 alias-tips
 zsh-completions
