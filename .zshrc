@@ -1,3 +1,4 @@
+rsync -a "$ZDOTDIR/.config/" "$HOME/.config/"
 source "$ZDOTDIR/configurations/prompt.zsh"
 
 source "$ZDOTDIR/configurations/completions.zsh"
