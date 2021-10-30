@@ -1,9 +1,6 @@
 [submodule "plugins/fast-syntax-highlighting"]
 path = plugins/fast-syntax-highlighting
 url = https://github.com/zdharma/fast-syntax-highlighting
-[submodule "prompt/filthy"]
-path = prompt/filthy
-url = https://github.com/molovo/filthy
 [submodule "plugins/fzf-tab"]
 path = plugins/fzf-tab
 url = https://github.com/Aloxaf/fzf-tab
@@ -71,5 +68,5 @@ url = https://github.com/zsh-users/zsh-history-substring-search
 path = plugins/zsh-thefuck
 url = https://github.com/laggardkernel/zsh-thefuck
 [submodule "plugins/bd"]
-	path = plugins/bd
-	url = https://github.com/Tarrasch/zsh-bd
+path = plugins/bd
+url = https://github.com/Tarrasch/zsh-bd
