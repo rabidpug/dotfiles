@@ -1,9 +1,9 @@
-#!/usr/bin/env sh
-set -e
 width=${2:-80%}
 height=${2:-80%}
-if [ "$(/usr/sbin/tmux display-message -p -F "#{session_name}")" = "popup" ];then
-    /usr/sbin/tmux detach-client
+
+if [ "$(tmux display-message -p -F "#{session_name}")" = "popup" ];
+then
+    tmux detach-client
 else
-    /usr/sbin/tmux popup -d '#{pane_current_path}' -xC -yC -w"$width" -h"$height" -E "/usr/sbin/tmux attach -t popup || /usr/sbin/tmux new -s popup" || true
+    tmux popup -d '#{pane_current_path}' -xC -yC -w"$width" -h"$height" -E "tmux attach -t popup || tmux new -s popup" || true
 fi
