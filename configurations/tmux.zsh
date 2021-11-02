@@ -1,18 +1,18 @@
 SCRN=$(tty)
+sesn='hack'
+if [[ -z "${VSCODE_IPC_HOOK_CLI:-}" ]]; then
+  export EDITOR=vim
+  export VISUAL=vim
+  export GIT_EDITOR=vim
+else
+  sesn="${WORKSPACE:-code}"
+  export EDITOR=code
+  export VISUAL=code
+  export GIT_EDITOR="code --wait"
+fi
 if which tmux 2>&1 >/dev/null && [[ $USER != 'root' ]]; then
   if [ -z "$TMUX" ] && [[ ! "$SCRN" =~ tty[0-9]+$ ]]; then
     TERM=screen-256color
-    sesn='hack'
-    if [[ "${TERM_PROGRAM:-}" = "vscode" ]]; then
-      sesn="${WORKSPACE:-code}"
-      export EDITOR=code
-      export VISUAL=code
-      export GIT_EDITOR="code --wait"
-    else
-      export EDITOR=vim
-      export VISUAL=vim
-      export GIT_EDITOR=vim
-    fi
     [[ "$sesn" = '${workspaceFolderBasename}' ]] && sesn='code'
     if tmux has-session -t $sesn 2>/dev/null; then
       tpth="$(realpath -e "$PWD//")" || "$(realpath -e $HOME/)"
