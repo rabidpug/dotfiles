@@ -24,9 +24,20 @@ zstyle :plugin:zsh-completion-generator programs \
   sudo \
   zstyle \
   lab \
+  ai \
   hub \
   ip \
-  rsync
+  rsync \
+  git \
+  jq \
+  yq \
+  ssh \
+  yay \
+  pacman \
+  tmux \
+  thefuck \
+  fzf \
+  z
 
 zstyle ':completion:*' menu select=2
 zstyle ':autocomplete:list-choices:*' min-input 3
