@@ -70,3 +70,6 @@ url = https://github.com/Tarrasch/zsh-bd
 [submodule "prompt/pure"]
 	path = prompt/pure
 	url = https://github.com/sindresorhus/pure
+[submodule "plugins/zsh-syntax-highlighting"]
+	path = plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

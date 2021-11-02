@@ -25,4 +25,4 @@ toggle-command-prefix
 zsh-thefuck
 zsh-autosuggestions
 zsh-history-substring-search
-fast-syntax-highlighting
+zsh-syntax-highlighting
