@@ -26,7 +26,7 @@ elif [[ "$USEROS" == "Darwin" ]]; then
 elif [[ "$USEROS" == "Arch" ]]; then
   alias pac=yay
   alias pacmatic='sudo --preserve-env=pacman_program /usr/bin/pacmatic'
-  alias yay='pacman_program="sudo -u #$UID /usr/bin/yay --pacman powerpill" pacmatic'
+  alias yay='pacman_program="sudo -u #$UID /usr/bin/yay" pacmatic'
   alias au='pac -Syu'
   alias ai='pac -S'
   alias ar='pac -Rcs'
