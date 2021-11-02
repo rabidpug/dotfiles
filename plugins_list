@@ -13,6 +13,7 @@ ohmyzsh/plugins/dircycle
 ohmyzsh/plugins/command-not-found
 ohmyzsh/plugins/common-aliases
 ohmyzsh/plugins/sudo
+ohmyzsh/plugins/systemd
 per-directory-history
 appup
 auto-ls
