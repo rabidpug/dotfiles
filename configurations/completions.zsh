@@ -1,7 +1,8 @@
-source "$ZDOTDIR/plugins/zsh-completion-generator/zsh-completion-generator.plugin.zsh"
 autoload -Uz compinit && compinit
+source "$ZDOTDIR/plugins/zsh-completion-generator/zsh-completion-generator.plugin.zsh"
 eval "$(thefuck --alias)"
 eval "$(zoxide init zsh)"
+eval "$(pmy init)"
 export NVM_COMPLETION=true
 export NVM_AUTO_USE=true
 USEROS=$(uname -s)

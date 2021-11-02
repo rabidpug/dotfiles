@@ -1,7 +1,8 @@
 rsync -a "$ZDOTDIR/.config/" "$HOME/.config/"
 
-PATH=$PATH:$HOME/.local/bin
-export PATH
+source "$ZDOTDIR/configurations/update.zsh"
+
+source "$ZDOTDIR/configurations/env.zsh"
 
 source "$ZDOTDIR/configurations/prompt.zsh"
 

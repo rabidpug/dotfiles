@@ -85,3 +85,9 @@ url = https://github.com/Tarrasch/zsh-bd
 [submodule "plugins/session-sauce"]
 	path = plugins/session-sauce
 	url = https://github.com/ChrisPenner/session-sauce.git
+[submodule "plugins/pmy"]
+	path = plugins/pmy
+	url = https://github.com/relastle/pmy-config.git
+[submodule "plugins/capture"]
+	path = plugins/capture
+	url = https://github.com/Valodim/zsh-capture-completion.git
