@@ -76,3 +76,12 @@ url = https://github.com/Tarrasch/zsh-bd
 [submodule "plugins/zsh-systemd"]
 	path = plugins/zsh-systemd
 	url = https://github.com/mikcho/zsh-systemd
+[submodule "plugins/zsh-vim-mode"]
+	path = plugins/zsh-vim-mode
+	url = https://github.com/softmoth/zsh-vim-mode.git
+[submodule "plugins/fzf-zsh-plugin"]
+	path = plugins/fzf-zsh-plugin
+	url = https://github.com/unixorn/fzf-zsh-plugin.git
+[submodule "plugins/session-sauce"]
+	path = plugins/session-sauce
+	url = https://github.com/ChrisPenner/session-sauce.git

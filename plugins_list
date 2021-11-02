@@ -4,6 +4,8 @@ npms
 zsh-hist
 jq
 bd
+fzf-zsh-plugin
+session-sauce
 zsh-fzf-history-search
 zsh-better-npm-completion
 ohmyzsh/plugins/git
@@ -27,3 +29,4 @@ zsh-thefuck
 zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting
+zsh-vim-mode

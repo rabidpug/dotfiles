@@ -5,3 +5,4 @@ for f in $ZDOTDIR/prompt/*/; do
 done
 autoload -U promptinit && promptinit
 prompt pure
+export MODE_INDICATOR=""
