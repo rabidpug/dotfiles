@@ -4,7 +4,6 @@ npms
 zsh-hist
 jq
 bd
-fzf-zsh-plugin
 session-sauce
 zsh-fzf-history-search
 zsh-better-npm-completion
@@ -22,7 +21,7 @@ autopair
 colored-man-pages
 forgit
 alias-tips
-zsh-completions
+#zsh-completions
 zsh-interactive-cd
 toggle-command-prefix
 zsh-thefuck
