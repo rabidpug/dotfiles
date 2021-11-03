@@ -36,8 +36,7 @@ zstyle :plugin:zsh-completion-generator programs \
   pacman \
   tmux \
   thefuck \
-  fzf \
-  z
+  fzf 
 
 zstyle ':completion:*' menu select=2
 zstyle ':autocomplete:list-choices:*' min-input 3
@@ -65,3 +64,18 @@ bindkey '^e' edit-command-line
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey '^n' jq-complete
+zshcache_time="$(date +%s%N)"
+
+autoload -Uz add-zsh-hook
+
+rehash_precmd() {
+  if [[ -a /var/cache/zsh/pacman ]]; then
+    local paccache_time="$(date -r /var/cache/zsh/pacman +%s%N)"
+    if (( zshcache_time < paccache_time )); then
+      rehash
+      zshcache_time="$paccache_time"
+    fi
+  fi
+}
+
+add-zsh-hook -Uz precmd rehash_precmd

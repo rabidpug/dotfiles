@@ -12,6 +12,16 @@ function mkcd() {
   mkdir -p $@
   cd $@
 }
+grcd() {
+  dr=$(git rev-parse --show-toplevel 2>/dev/null)
+  pdr=$(git -C ../ rev-parse --show-toplevel 2>/dev/null)
+  [[ "$dr" == "$PWD" ]] && dr=$pdr
+  if [[ "$dr" != "$PWD" ]] && [[ ! -z "$dr" ]]; then
+    cd $dr
+  else
+    echo not a git repo
+  fi
+}
 function e() {
   s=''
   f=''
