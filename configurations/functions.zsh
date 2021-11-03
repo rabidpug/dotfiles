@@ -12,6 +12,26 @@ function mkcd() {
   mkdir -p $@
   cd $@
 }
+function gsrm() {
+  for sm in "$@"; do
+    exit_err() {
+      [ $# -gt 0 ] && echo "fatal: $*" 1>&2
+      exit 1
+    }
+  if git submodule status "$sm" >/dev/null 2>&1; then
+    git submodule deinit -f "$sm"
+    git rm -rf "$sm"
+    rm -rf ".git/modules/$sm"
+    if [ -z "$(cat .gitmodules)" ]; then
+      git rm -f .gitmodules
+    else
+      git add .gitmodules
+    fi
+  else
+    exit_err "Submodulee '$sm' not found"
+  fi
+  done
+}
 grcd() {
   dr=$(git rev-parse --show-toplevel 2>/dev/null)
   pdr=$(git -C ../ rev-parse --show-toplevel 2>/dev/null)

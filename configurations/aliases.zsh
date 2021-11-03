@@ -27,10 +27,10 @@ elif [[ "$USEROS" == "Arch" ]]; then
   alias pac=yay
   alias pacmatic='sudo --preserve-env=pacman_program /usr/bin/pacmatic'
   alias yay='pacman_program="sudo -u #$UID /usr/bin/yay" pacmatic'
-  alias au='pac -Syu'
-  alias ai='pac -S'
-  alias ar='pac -Rcs'
-  alias as='pac'
+  alias au='yay -Syu'
+  alias ai='yay -S'
+  alias ar='yay -Rcs'
+  alias as='yay'
   alias al="yay -Qq | fzf --preview 'yay -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"
 fi
 alias t="tmux"

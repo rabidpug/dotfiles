@@ -1,4 +1,4 @@
-PATH=$PATH:$HOME/.local/bin:$ZDOTDIR/plugins/capture
+PATH=$PATH:$HOME/.local/bin:$ZDOTDIR/plugins/capture:$ZDOTDIR/plugins/directory-history
 export PATH
 PMY_RULE_PATH=$ZDOTDIR/pmy-custom:$ZDOTDIR/plugins/pmy/rules
 PMY_SNIPPET_PATH=$ZDOTDIR/plugins/pmy/snippets

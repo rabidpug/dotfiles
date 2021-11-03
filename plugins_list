@@ -1,5 +1,4 @@
 zsh-nvm
-fzf-tab
 npms
 zsh-hist
 jq
@@ -7,7 +6,6 @@ bd
 session-sauce
 zsh-fzf-history-search
 zsh-better-npm-completion
-ohmyzsh/plugins/git
 ohmyzsh/plugins/fzf
 ohmyzsh/plugins/dircycle
 ohmyzsh/plugins/command-not-found
@@ -21,20 +19,20 @@ ohmyzsh/plugins/gcloud
 ohmyzsh/plugins/gitignore
 ohmyzsh/plugins/man
 ohmyzsh/plugins/safe-paste
-ohmyzsh/plugins/safe-paste
-per-directory-history
+ohmyzsh/plugins/git
 appup
 auto-ls
 autopair
 fzf-z
 colored-man-pages
 forgit
+fzf-tab
 alias-tips
 zsh-completions
 zsh-interactive-cd
 toggle-command-prefix
+zsh-history-substring-search
 zsh-thefuck
 zsh-autosuggestions
-zsh-history-substring-search
 fast-syntax-highlighting
 zsh-vim-mode

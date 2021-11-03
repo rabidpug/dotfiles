@@ -22,9 +22,6 @@ url = https://github.com/lukechilds/zsh-better-npm-completion
 [submodule "plugins/ohmyzsh"]
 path = plugins/ohmyzsh
 url = https://github.com/ohmyzsh/ohmyzsh
-[submodule "plugins/per-directory-history"]
-path = plugins/per-directory-history
-url = https://github.com/jimhester/per-directory-history
 [submodule "plugins/appup"]
 path = plugins/appup
 url = https://github.com/cloudstek/zsh-plugin-appup
@@ -70,9 +67,6 @@ url = https://github.com/Tarrasch/zsh-bd
 [submodule "prompt/pure"]
 	path = prompt/pure
 	url = https://github.com/sindresorhus/pure
-[submodule "plugins/zsh-systemd"]
-	path = plugins/zsh-systemd
-	url = https://github.com/mikcho/zsh-systemd
 [submodule "plugins/zsh-vim-mode"]
 	path = plugins/zsh-vim-mode
 	url = https://github.com/softmoth/zsh-vim-mode.git

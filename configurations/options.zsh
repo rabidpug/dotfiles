@@ -15,7 +15,7 @@ setopt hist_save_no_dups      # Omit older commands in favor of newer ones.
 setopt pushd_ignore_dups      # Dont push copies of the same dir on stack.
 setopt pushd_minus            # Reference stack entries with "-".
 setopt auto_pushd             # Auto directory pushd so that you can get dirs list by cd -[tab]
-
+export ZSH_PLUGINS_ALIAS_TIPS_TEXT="$(tput setaf 11)❯❯ $(tput setaf 12)$(tput bold)"
 zstyle :plugin:zsh-completion-generator programs \
   docker \
   docker-compose \
@@ -61,8 +61,13 @@ add-zsh-hook -Uz precmd rehash_precmd
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '^e' edit-command-line
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+ # Bind up/down arrow keys to navigate through your history
+  bindkey '\e[A' directory-history-search-backward
+  bindkey '\e[B' directory-history-search-forward
+
+  # Bind CTRL+k and CTRL+j to substring search
+  bindkey '^j' history-substring-search-up
+  bindkey '^k' history-substring-search-down
 bindkey '^n' jq-complete
 zshcache_time="$(date +%s%N)"
 
@@ -79,3 +84,4 @@ rehash_precmd() {
 }
 
 add-zsh-hook -Uz precmd rehash_precmd
+autopair-init
