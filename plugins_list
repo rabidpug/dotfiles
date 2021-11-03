@@ -28,5 +28,5 @@ toggle-command-prefix
 zsh-thefuck
 zsh-autosuggestions
 zsh-history-substring-search
-zsh-syntax-highlighting
+fast-syntax-highlighting
 zsh-vim-mode

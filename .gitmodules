@@ -70,9 +70,6 @@ url = https://github.com/Tarrasch/zsh-bd
 [submodule "prompt/pure"]
 	path = prompt/pure
 	url = https://github.com/sindresorhus/pure
-[submodule "plugins/zsh-syntax-highlighting"]
-	path = plugins/zsh-syntax-highlighting
-	url = https://github.com/zsh-users/zsh-syntax-highlighting
 [submodule "plugins/zsh-systemd"]
 	path = plugins/zsh-systemd
 	url = https://github.com/mikcho/zsh-systemd
@@ -91,3 +88,6 @@ url = https://github.com/Tarrasch/zsh-bd
 [submodule "plugins/capture"]
 	path = plugins/capture
 	url = https://github.com/Valodim/zsh-capture-completion.git
+[submodule "plugins/fast-syntax-highlighting"]
+	path = plugins/fast-syntax-highlighting
+	url = https://github.com/zdharma-continuum/fast-syntax-highlighting.git
