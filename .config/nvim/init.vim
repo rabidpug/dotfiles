@@ -32,7 +32,6 @@ Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
-Plug 'valloric/youcompleteme'
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'palantir/tslint'
